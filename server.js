@@ -72,6 +72,14 @@ app.get('/about', (req,res)=>{
   });
 });
 
+app.get('/project', (req,res)=>{
+  res.render('project.hbs',{
+      pageTitle: 'project',
+      desc: 'Follow my github profile',
+      link: "tanmoyctg"
+  });
+});
+
 app.get('/bad', (req, res)=>{
   res.send({
       error: 'error status code'
